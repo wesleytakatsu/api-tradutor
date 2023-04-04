@@ -1,0 +1,14 @@
+{
+  "name": "api-tradutor-node",
+  "version": "1.0.0",
+  "description": "API para traduzir textos atravez do Google Tradutor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wesley Sieiro Takatsu de Araujo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
