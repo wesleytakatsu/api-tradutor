@@ -16,11 +16,13 @@ const apiGoogleTranslate = async function(detect_linguage, translate_to, text){
   const page = await browser.newPage()
 
   var url = `https://translate.google.com.br/?sl=${detect_linguage}&tl=${translate_to}&text=${encodeURIComponent(text)}&op=translate`;
+
   await page.goto(url)
-  await page.waitForTimeout(1500);
+  await page.waitForTimeout(5000);
   
   const result = await page.evaluate(() => {
-    return document.getElementsByClassName('NqnNQd')[0].innerText;
+    //  MANTER ATENTO NO GOOGLE POIS ELES MUDAM A CLASSE DE TEMPOS EM TEMPOS
+    return document.getElementsByClassName('HwtZe')[0].innerText;
   })
 
   browser.close()

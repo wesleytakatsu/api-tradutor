@@ -9,6 +9,10 @@
   "author": "Wesley Sieiro Takatsu de Araujo",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "morgan": "^1.10.0",
+    "puppeteer": "^19.8.3"
   }
 }
